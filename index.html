@@ -1,300 +1,598 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <title>Siddhant Thalal</title>
-  <link rel="stylesheet" href="styles5.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Siddhant Thalal — Robotics Portfolio</title>
+  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@300;400;700;900&display=swap"
     rel="stylesheet">
-  <style>
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-
-
-    video {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 1rem 0;
-      border-radius: 8px;
-    }
-  </style>
 </head>
 
 <body>
-  <section class="section1">
-    <div class="heading">
-      <p class="lk">Greetings! I'm Siddhant Thalal</p>
-      <p class="lk">Designing Motion. Writing Logic. Building Robots</p>
-      <button class="btn" id="btn">
-        <p>Check out my portfolio &nbsp &nbsp
-        <div class="rotate"><i class="fa-solid fa-arrow-right"></i></div>
-        </p>
-      </button>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Siddhant Thalal</h1>
+        <p class="tag">Designing Motion. Engineering Logic. Building Robots.</p>
+      </div>
 
+      <nav class="top-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#extras">Extras</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-  </section>
-  <div class="section2">
-    <div class="header">
-      <div class="name">
-        <p class="b">Siddhant Thalal</p>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Hi — I’m Siddhant</h2>
+          <p class="lead">Mechanical engineer (IIT Jodhpur) • Research Assistant at IISc Bangalore. I build and test
+            robotic systems from mechanical design and simulation to sensing, control and hardware validation. Preparing
+            for MS in Robotics with focus on legged mobility, underwater systems and autonomous robots.</p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn outline" href="assets/docs/resume.pdf" target="_blank">Download Resume</a>
+          </div>
+
+          <ul class="social-inline">
+            <li><a href="https://github.com/Siddhant-666" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="mailto:thalal.1@iitj.ac.in"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/siddhant-thalal-8a6bb5247" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/@siddhantthalalb21me066" target="_blank"><i
+                  class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <img src="siddhant.jpg" alt="Siddhant Thalal" class="profile-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about container">
+      <div class="about-grid">
+        <div>
+          <h3>About Me</h3>
+          <p>I’m Siddhant Thalal, a Mechanical Engineering graduate from IIT Jodhpur and currently a Research Assistant
+            at I3D Lab (IISC Bangalore). My work sits at the intersection of robotics design, dynamics, and control,
+            where I build
+            and test systems that move intelligently in the real world. I enjoy working across the full robotics
+            stack from mechanical design and simulation to sensing, algorithms, and hardware validation. I’m preparing
+            for MS programs in Robotics to deepen my expertise in legged mobility, underwater systems, and autonomous
+            robotic behavior</p>
+        </div>
+
+        <div class="quick-info">
+          <p><strong>Education</strong><br>IIT Jodhpur — B.Tech (Robotics specialization) • CGPA: 8.01</p>
+          <p><strong>Current</strong><br>Research Assistant, IISc Bangalore</p>
+          <p><strong>Contact</strong><br>thalal.1@iitj.ac.in • +91 78750 37670</p>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="experience" class="container section">
+      
+        <h3>Research & Engineering Experience</h3>
+
+        <div class="exp-item">
+          <h4>Research Assistant — I3D Lab, Indian Institute of Science (IISc)</h4>
+          <p class="muted">Advisor: Prof. Pradipta Biswas</p>
+
+          <p>
+            Worked on human–robot interaction and continuum robotics systems spanning
+            aerial manipulation and immersive teleoperation.
+          </p>
+
+          <p><strong>Hyper-Redundant Aerial Manipulator — Rope-Space Modeling & Experimental Validation</strong></p>
+          <p>
+            Designed and analytically modeled a tendon-driven hyper-redundant aerial manipulator enabling large
+            spherical workspace coverage while decoupling the UAV base from the interaction region. Derived a recursive
+            kinematic formulation for an N-link prismatic–universal chain and established a rope-space mapping between
+            tendon length variations and end-effector pose.
+          </p>
+
+          <p>
+            Built an experimental validation pipeline integrating encoder-based tendon measurements with
+            motion capture ground truth for joint-space and task-space error analysis. Demonstrated accurate
+            pose realization and validated spherical workspace predictions through closed-loop experiments.
+          </p>
+
+          <p class="tech">
+            <strong>Tech:</strong> Continuum Robotics, Tendon-Driven Systems, Kinematics,
+            MATLAB, Motion Capture (OptiTrack), Embedded Systems
+          </p>
+
+          <p><strong>XR-Based Remote Teleoperation & Digital Twin Development</strong></p>
+          <p>
+            Developed an immersive XR teleoperation framework enabling real-time 3D visualization and
+            intuitive spatial control of a robotic system. Built a URDF-based digital twin for accurate
+            kinematic replication and synchronized it with live robot telemetry.
+          </p>
+
+          <p>
+            Implemented a WebSocket-based bidirectional communication layer enabling low-latency global
+            remote control, allowing the robot to be operated remotely from any location. Demonstrated
+            spatial interaction tasks (target touching) through embodied XR interfaces, establishing a
+            foundation for future gripper-based manipulation and shared autonomy.
+          </p>
+
+          <p class="tech">
+            <strong>Tech:</strong> Human–Robot Interaction, XR/VR Interfaces, URDF,
+            WebSockets, Real-Time Systems, Robot Control
+          </p>
+        </div>
 
 
-      </div>
-      <div class="info">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    <div class="alpha">
-      <div class="image">
-        <img src="siddhant.JPG" alt="" />
-      </div>
-      <div class="info2">
-        <h1>
-          Siddhant Thalal
-        </h1>
-        <h2>
-          A bit about me
-        </h2>
+
+        <div class="exp-item">
+          <h4>Research Intern — IISc Bangalore</h4>
+          <p class="muted">Aug 2025 – Oct 2025</p>
+
+          <ul>
+            <li>Simulated and analyzed the dynamics of a hybrid wheeled mobile robot in MATLAB Simscape, benchmarking a
+              conventional four-wheel system against a five-wheel leg–wheel configuration.</li>
+
+            <li>Demonstrated reduced rear-wheel impact forces during stair descent (≈935 N → ≈615 N) due to improved
+              load
+              distribution provided by the fifth leg.</li>
+
+            <li>Conducted experimental validation using IMU-based angle estimation to measure cart motion and
+              pitching-wheel behavior.</li>
+
+            <li>Assisted in developing internal research documentation.</li>
+          </ul>
+        </div>
+
+      </section> -->
+    <section id="experience" class="container section">
+      <h3>Research & Engineering Experience</h3>
+
+      <div class="exp-item">
+        <h4>Research Assistant — I3D Lab, Indian Institute of Science (IISc)</h4>
+        <p class="muted">Advisor: Prof. Pradipta Biswas</p>
+
         <p>
-          B Tech in Mechanical engineering at IIT Jodhpur looking to expand my programming skills and practical
-          experience
-          through internships and work-study positions. So, I can apply my foundational knowledge in Mechanical
-          Engineering, deepen my programming expertise and knowledge for Robotics.
+          Worked on human–robot interaction and continuum robotics systems spanning
+          aerial manipulation and immersive teleoperation.
         </p>
 
+        <p class="project-title">
+          <strong>
+            Hyper-Redundant Aerial Manipulator — Rope-Space Modeling & Experimental Validation
+          </strong>
+          <a href="#aerial-demo" class="video-icon" title="Watch Demo">🎥</a>
+        </p>
 
-      </div>
-    </div>
+        <p>
+          Designed and analytically modeled a tendon-driven hyper-redundant aerial manipulator enabling large
+          spherical workspace coverage while decoupling the UAV base from the interaction region. Derived a recursive
+          kinematic formulation for an N-link prismatic–universal chain and established a rope-space mapping between
+          tendon length variations and end-effector pose.
+        </p>
 
-    <div class="hl">
-      <div class="g">
-        <input type="button" name="Resume" id="Resume" value="Resume" />
-      </div>
-      <div class="o">
-        <input type="button" name="Skills" id="skills" value="Skills" />
-      </div>
-      <div class="bl">
-        <input type="button" name="Projects" id="projects" value="Projects" />
-      </div>
-      <div class="bl">
-        <input type="button" name="Robotics" id="Robotics" value="Robotics" />
-      </div>
-    </div>
-    <hr class="line">
-    <div class="social_media">
-      <p>Thank you for visiting my portfolio. Feel free to reach out to me for any opportunities or collaborations!</p>
-      <ul id="lo">
-        <a href="https://github.com/Siddhant-666"><i class="fa-brands fa-github"></i></a>
-        <a
-          href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfprrTWjqQXxPnKPpRtVGjpkcvTmGDZkSgVqVCShzFCqPfTtvlJdxfnXzXLxLpDNNVsHBq"><i
-            class="fa-solid fa-envelope"></i></i></a>
-        <a
-          href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEZ1S-owTzL7wAAAZCi8Ltgy_b2AsbkctL-FVoSDme4muB3F8oTKeu42qxwyAtBsLclQMtGklsAOFCeH03x-e4bNYNIO_3qopd_6LmxzS_halYnJR3O7TTIlyT2EiI_-RUNMk4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsid"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/@siddhantthalalb21me066">
+        <p>
+          Built an experimental validation pipeline integrating encoder-based tendon measurements with
+          motion capture ground truth for joint-space and task-space error analysis. Demonstrated accurate
+          pose realization and validated spherical workspace predictions through closed-loop experiments.
+        </p>
 
-          <i class="fa-brands fa-youtube"></i></a>
+        <p class="tech">
+          <strong>Tech:</strong> Continuum Robotics, Tendon-Driven Systems, Kinematics,
+          MATLAB, Motion Capture (OptiTrack), Embedded Systems
+        </p>
+
+        <p class="project-title">
+          <strong>XR-Based Remote Teleoperation & Digital Twin Development</strong>
+          <a href="#xr-demo" class="video-icon" title="Watch Demo">🎥</a>
+        </p>
+
+        <p>
+          Developed an immersive XR teleoperation framework enabling real-time 3D visualization and
+          intuitive spatial control of a robotic system. Built a URDF-based digital twin for accurate
+          kinematic replication and synchronized it with live robot telemetry.
+        </p>
+
+        <p>
+          Implemented a WebSocket-based bidirectional communication layer enabling low-latency global
+          remote control, allowing the robot to be operated remotely from any location. Demonstrated
+          spatial interaction tasks (target touching) through embodied XR interfaces, establishing a
+          foundation for future gripper-based manipulation and shared autonomy.
+        </p>
+
+        <p class="tech">
+          <strong>Tech:</strong> Human–Robot Interaction, XR/VR Interfaces, URDF,
+          WebSockets, Real-Time Systems, Robot Control
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h4>Research Intern — IISc Bangalore</h4>
+        <p class="muted">Aug 2025 – Oct 2025</p>
+
+        <ul>
+          <li>Simulated and analyzed the dynamics of a hybrid wheeled mobile robot in MATLAB Simscape, benchmarking a
+            conventional four-wheel system against a five-wheel leg–wheel configuration.</li>
+
+          <li>Demonstrated reduced rear-wheel impact forces during stair descent (≈935 N → ≈615 N) due to improved
+            load distribution provided by the fifth leg.</li>
+
+          <li>Conducted experimental validation using IMU-based angle estimation to measure cart motion and
+            pitching-wheel behavior.</li>
+
+          <li>Assisted in developing internal research documentation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <section id="research" class="container section">
+      <h3>Research Interests</h3>
+      <ul class="chips">
+        <li>Bio-inspired Robotics</li>
+        <li>Continuum Robotics</li>
+        <li>Legged Locomotion</li>
+        <li>Underwater Robotics</li>
+        <li>Robot Dynamics</li>
+        <li>Control Systems (PID / MPC / MIMO)</li>
+        <li>Autonomous Navigation & SLAM</li>
+        
       </ul>
-    </div>
-    <div class="nav">
-      <p>About me</p>
+    </section>
 
-      <ul>
-        <li><a href="https://github.com/Siddhant-666">Github profile</a></li>
-        <li><a
-            href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEZ1S-owTzL7wAAAZCi8Ltgy_b2AsbkctL-FVoSDme4muB3F8oTKeu42qxwyAtBsLclQMtGklsAOFCeH03x-e4bNYNIO_3qopd_6LmxzS_halYnJR3O7TTIlyT2EiI_-RUNMk4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsid">Linked
-            in profile</a></li>
-        <li class="pro" id="pro">Projects</li>
-        <li id="ski" class="ski">Skills</li>
-        <li> <a href="https://www.youtube.com/@siddhantthalalb21me066">
+    <!-- PROJECTS -->
+    <section id="projects" class="container section">
+      <h3>Featured Projects</h3>
 
-            YouTube Channel</a></li>
-        <li id="close"><i class="fa-solid fa-xmark"></i></li>
+      <div class="cards">
 
-      </ul>
-
-
-    </div>
-    <div class="skills_heading">
-      <h2>My Skills</h2>
-    </div>
-
-    <div class="skills_section1">
-      <div class="frontend">
-        <h3> Programming Languages</h3>
-        <ul>
-          <li>
-            C <i class="fa-solid fa-c"></i>
-          </li>
-          <li>
-            Java <i class="fa-brands fa-java"></i>
-          </li>
-
-        </ul>
-        <h3>
-          Frontend
-        </h3>
-        <ul>
-          <li>
-            HTML <i class="fa-brands fa-html5"></i>
-          </li>
-          <li>
-            CSS <i class="fa-brands fa-css3-alt"></i>
-          </li>
-          <li>
-            Java Script <i class="fa-brands fa-js"></i>
-          </li>
-          <li>
-            Bootstrap <i class="fa-brands fa-bootstrap"></i>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-    <div class="skills_section2">
-      <div class="backend">
-        <h3>
-          Backend
-        </h3>
-        <ul>
-          <li>
-            Node.js <i class="fa-brands fa-node-js"></i>
-          </li>
-          <li>
-            Express
-          </li>
-
-        </ul>
-
-        <h3>Templating Engines</h3>
-        <ul>
-          <li>EJS</li>
-        </ul>
-
-        <h3>Database Management</h3>
-        <ul>
-          <li>MongoDB</li>
-          <li>MySQL</li>
-        </ul>
-
-        <h3>Version Control</h3>
-        <ul>
-          <li>Git & GitHub <i class="fa-brands fa-github"></i> </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-    <section class="section_projects">
-      <header>
-        <h1>Projects</h1>
-      </header>
-      <div class="box_projects">
-        <div class="car">
-          <img src="Screenshot 2024-08-03 202029.png" class="card-img-top">
+        <!-- Project 1 -->
+        <!-- <article class="card">
+          <img src="c:\Users\HP\Downloads\experimental-setup_a3Fpna9C.jpg" alt="Camel leg prototype">
           <div class="card-body">
-            <h3 class="card-text"><b>Waterlust: Explore and Review Scenic Getaways.</b></h3>
-            <p class="tech"> HTML • CSS • JavaScript • MongoDB • Express • Node.js • Joi</p>
+            <h4>Camel-Inspired Quadruped Foot Design for
+ Enhanced Locomotion on Granular Terrain</h4>
+            <p class="muted">Problem: Robots sink and lose traction on sand.</p>
+            <p>Designed a compliant foot inspired by camel morphology...</p>
+            <p class="small"><strong>Skills:</strong> CAD, dynamics, sensing, ROS2, MATLAB</p>
+            <a class="small-link" href="assets/docs/camel_leg_report.pdf" target="_blank">Read report</a>
+          </div>
+        </article> -->
+
+        <article class="card">
+          <img src="c:\Users\HP\Downloads\experimental-setup_a3Fpna9C.jpg" alt="Camel-inspired robotic foot prototype">
+
+          <div class="card-body">
+            <h4>Camel-Inspired Quadruped Foot for Locomotion on Granular Terrain</h4>
+
+            <p class="muted">Challenge: Conventional robotic feet sink and lose traction on sand.</p>
+
+            <p>
+              Developed a biomimetic expanding foot inspired by camel morphology to improve quadruped stability and
+              mobility on
+              deformable sand. Designed and simulated the mechanism (IK + dynamics), performed FEA stress analysis,
+              and
+              validated performance
+              through sandbox experiments using FSR sensing and ArUco-based trajectory tracking.
+            </p>
+
+            <p class="small">
+              <strong>Skills:</strong> CAD, Mechanism Design, Terramechanics, Multibody Simulation, Inverse
+              Kinematics,
+              MATLAB/Simulink (Simscape), Control Systems, FEA, Sensing & Experimental Validation
+            </p>
+
+            <p class="small highlight">
+              <i class="fa-solid fa-certificate"></i>
+              <strong>Patent Filed:</strong> Design submitted for IP protection
+            </p>
+
+            
+          </div>
+        </article>
+
+
+
+        <!-- Project 2 (Video) -->
+        <!-- <article class="card">
+          <video src="underwater.mp4" controls autoplay muted loop class="project-video"></video>
+
+          <div class="card-body">
+            <h4>Buoyancy-Based Depth Control for an Underwater Robot</h4>
+
+            <p class="muted">Problem: Aerial-style drones fail underwater due to high drag and lack of buoyancy control.
+            </p>
+
+            <p>
+              Built a sealed depth-control module using Arduino, pressure sensing, and a syringe-driven
+              buoyancy mechanism. By modulating water intake/release, the robot autonomously adjusted
+              mass to ascend, descend, or hold depth. Developed calibration curves for the pressure sensor,
+              created a Bluetooth interface + mobile app for real-time monitoring, and implemented
+              P-Control and PID for stable underwater depth regulation. Validated through simulations and
+              in-water experiments.
+            </p>
+
+            <p class="small"><strong>Skills:</strong> Embedded Systems, Depth Sensing, Control (P/PID), MATLAB–Simulink,
+              Mechanism Design, Prototyping</p>
+
+            <a class="small-link" href="assets/videos/underwater_demo.mp4" target="_blank">Watch demo</a>
+          </div>
+        </article> -->
+        <article class="card">
+          <video src="underwater.mp4" controls autoplay muted loop class="project-video"></video>
+
+          <div class="card-body">
+            <h4>Buoyancy-Based Depth Control for an Underwater Robot</h4>
+            <p class="muted">Problem: Underwater robots lose stability due to drag and poor buoyancy control.</p>
+
+            <p>
+              Designed and implemented a buoyancy-regulated depth control module using a syringe–
+              based water intake/release system. Built a sealed Arduino-powered unit with a pressure
+              sensor, motor driver, syringe actuator, and Bluetooth telemetry. Implemented P and PID
+              control loops to achieve stable depth-holding under disturbances, validated through
+              simulations (Simulink) and experiments.
+            </p>
+
+            <p class="small"><strong>Skills:</strong> Embedded Control, Buoyancy Dynamics, Sensors, MATLAB/Simulink,
+              PID, Prototyping</p>
+
+            
+          </div>
+        </article>
+
+
+        <!-- Project 3 -->
+        <article class="card">
+          <img src="assets/images/roboguide.jpg" alt="RoboGuide">
+          <div class="card-body">
+            <h4>RoboGuide — Autonomous Campus Navigator MR and video of simulation</h4>
+            <p class="muted">Complete sensing-planning-control workflow.</p>
+            <p>Implemented GPS-based planning, LIDAR avoidance...</p>
+            <p class="small"><strong>Skills:</strong> SLAM, path planning, ROS, Python</p>
+            <a class="small-link" href="https://github.com/Siddhant-666" target="_blank">Code</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <section id="mini-projects" class="container section">
+      <h3>Mini Projects & Experiments</h3>
+      <div class="mini-grid">
+
+        <!-- MINI PROJECT 1 – TurtleBot & OpenManipulator -->
+        <article class="mini-card">
+          <img src="C:\Users\HP\Downloads\WhatsApp Image 2025-01-02 at 22.24.16_d20b9149.jpg" class="mini-media"
+            alt="TurtleBot">
+          <h4>Exploring Autonomous Robotics: TurtleBot3 & OpenManipulator</h4>
+          <p>Implemented SLAM, navigation, TF, MoveIt IK, and teleop using ROS2. Ran experiments in Gazebo and on
+            hardware.</p>
+          <p class="small"><strong>Skills:</strong> ROS2, Gazebo, RViz2, SLAM, MoveIt, Python</p>
+          <a class="small-link" href="c:\Users\HP\Downloads\RMP7010_siddhant (1).pdf" target="_blank">Read report</a>
+        </article>
+
+        <!-- MINI PROJECT 2 – EMG Prosthetic Hand -->
+        <article class="mini-card">
+          <video class="mini-media" src="hand.mp4" autoplay muted loop></video>
+          <h4>EMG-Controlled Prosthetic Hand</h4>
+          <p>Working on a prosthetic hand provided by Jaipur Foot, we automated its motion using EMG sensors. Collected signals were filtered and processed, then tested on multiple users, demonstrating accurate and responsive control.
+          </p>
+          <p class="small"><strong>Skills:</strong> EMG, Signal Processing, CAD, Embedded Systems</p>
+        </article>
+
+        <!-- MINI PROJECT 3 – Medicine Dispenser -->
+        <!-- <article class="mini-card">
+          <img src="C:\Users\HP\Pictures\Screenshots\Screenshot 2025-11-17 213638.png" class="mini-media"
+            alt="TurtleBot">
+
+          <h4>Automated Medicine Dispenser</h4>
+          <p>Designed a time-based pill dispenser with a servo-driven rotating tray, ultrasonic sensing, and a
+            Bluetooth-connected mobile app for scheduled reminders.</p>
+
+          <p class="small"><strong>Skills:</strong> Mechanism Design, Arduino, Bluetooth App, CAD, Sensors</p>
+          <a class="small-link" href="file:///C:/Users/HP/Downloads/Automated_Medication_Dispenser_Report.pdf"
+            target="_blank">Read report</a>
+        </article> -->
+
+
+        <!-- MINI PROJECT 4 – Queue Maintainer -->
+        <article class="mini-card">
+          
+          <video class="mini-media" src="C:\Users\HP\Downloads\20251231_123415.mp4" autoplay muted loop></video>
+          
+          <h4>Continuum Robot Claw Design</h4>
+          <p>Engineered a four-fingered, tendon-driven claw to grasp and manipulate irregular objects like fruits. Designed modularly for easy attachment to continuum robots, and currently integrating servo motors for precise, coordinated finger motion.</p>
+          <p class="small"><strong>Skills:</strong> Mechanical Design, Robotics Control, Embedded Systems, Prototyping</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="container section">
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div>
+          <h4>Robotics & Control</h4>
+          <ul>
+            <li>Kinematics & Dynamics</li>
+            <li>PID / MPC / MIMO control</li>
+            <li>ROS2 • SLAM • Sensor Fusion</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Programming & Tools</h4>
+          <ul>
+            <li>Python • C • MATLAB</li>
+            <li>Gazebo • RViz • Simscape • SolidWorks</li>
+            <li>Git • OpenCV • Arduino</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Other</h4>
+          <ul>
+            <li>Data analysis • Experiment design</li>
+            <li>Hardware prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="container section">
+      <h3>Publications</h3>
+
+      <div class="pub-list">
+
+        <div class="publication-item">
+          <h3>Hyper-Redundant Aerial Manipulator: Rope-Space Modeling and Experimental Validation</h3>
+          <p>Submitted to IROS 2026</p>
+          <a href="#" class="pub-link">Preprint Coming Soon</a>
+        </div>
+
+        <div class="publication-item">
+          <h3>Camel-Inspired Quadruped Foot Design for Enhanced Locomotion on Granular Terrain</h3>
+          <p>Submitted to IROS 2026</p>
+          <a href="assets/docs/paper1.pdf" target="_blank" class="pub-link">View PDF</a>
+        </div>
+
+        <div class="publication-item">
+          <h3>Design and Development of a Pitch-Enabled Leg–Wheel Mobile Robot</h3>
+          <p>Manuscript Ready • Planned for IEEE RAL Submission</p>
+          <p class="muted">Preprint unavailable due to pending patent filing</p>
+        </div>
+
+      </div>
+    </section>
+    <section id="media" class="container section">
+      <h3>Media & Demonstrations</h3>
+
+      <div class="media-grid">
+
+        <!-- Hyper-Redundant Manipulator -->
+        <div class="media-item" id="aerial-demo">
+          <h4>Hyper-Redundant Aerial Manipulator <span class="coming-soon">Coming Soon</span></h4>
+
+          <video class="media-video" controls autoplay muted loop playsinline>
+            <source src="assets/videos/aerial_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <p class="media-caption">
+            Experimental validation showing rope-space modeling and closed-loop pose tracking.
+          </p>
+        </div>
+
+        <!-- XR Teleoperation -->
+        <div class="media-item" id="xr-demo">
+          <h4>XR-Based Teleoperation</h4>
+
+          <video class="media-video" controls autoplay muted loop playsinline>
+            <source src="C:\Users\HP\Downloads\User_Interaction_with_balls_4k.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <p class="media-caption">
+            Real-time immersive teleoperation using a URDF digital twin and WebSocket streaming.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!-- EXTRAS -->
+    <section id="extras" class="container section extras">
+      <div class="extras-grid">
+        <div>
+          <h3>Achievements</h3>
+          <ul>
+            <li>Zonal Rank 17 in the International Mathematics Olympiad (IMO)</li>
+            <li>2nd Place in District-Level Badminton Tournament (MBA)</li>
+            <li>Secured Grade ‘A’ in Elementary Drawing Examination (Maharashtra Board)</li>
+            <li>Selected to represent IIT Jodhpur in the Inter-IIT Tech Meet Robotics Challenge, competing against top
+              teams from all IITs.</li>
+
+          </ul>
+        </div>
+
+        <!-- <div>
+          
+            <h3>Creative Interests</h3>
+            <p>I enjoy sketching portraits, scenery, and freehand art. Drawing helps me stay creative and improves my
+              attention to detail.</p>
+
+            <div class="gallery">
+              <img src="C:\Users\HP\Downloads\20230215_233720.jpg" alt="art sketch 1">
+              <img src="c:\Users\HP\Downloads\WhatsApp Image 2025-01-07 at 18.27.22_c46b8b09 - Copy.png"
+                alt="art sketch 2">
+
+              <video src="D:\Telegram Desktop\portfolio\draw.mp4" autoplay muted loop></video>
+            </div>
+          
+
+        </div> -->
+
+        <div>
+          <h3>Creative Interests</h3>
+          <p>I sketch portraits, characters, and freehand artwork. Drawing helps me stay creative and sharp with
+            detailing—skills that also translate into my engineering work.</p>
+
+          <div class="art-gallery">
+            <div class="art-item">
+              <img src="C:\Users\HP\Downloads\20230215_233720.jpg" alt="art sketch 1">
+            </div>
+
+            <div class="art-item">
+              <img src="c:\Users\HP\Downloads\WhatsApp Image 2025-01-07 at 18.27.22_c46b8b09 - Copy.png"
+                alt="art sketch 2">
+            </div>
+
+            <div class="art-item">
+              <video src="D:\Telegram Desktop\portfolio\draw.mp4" autoplay muted loop></video>
+            </div>
           </div>
         </div>
-        <div class="car">
-          <img src="projectImage.png" class="card-img-top1">
-          <div class="card-body1">
-            <h3 class="card-text"> <b> Personal Portfolio Website</b></h3>
-            <p class="tech"> HTML • CSS • Java • Script</p>
-          </div>
-        </div>
+
       </div>
-
-    </section>
-    <section class="section5">
-      <h2 class="robota">Robotics Section</h2>
-      <div class="projects-container">
-        <div class="project-box"
-          onclick="showPopup('Developed a depth control system for an underwater robot using pressure sensors and an Arduino-based control mechanism. Designed and implemented a syringe-and-motor system to inject and eject water, dynamically altering the robot\'s mass and buoyant force for precise depth regulation. Utilized PID control algorithms to ensure accurate and responsive adjustments, delivering a reliable solution for underwater operations.')">
-          <img src="resized_image_150x150.png" alt="Autonomous Navigation">
-          <p>Depth Control of an Underwater Robot</p>
-        </div>
-        <div class="project-box"
-          onclick="showPopup('Developed and tested the robot’s leg, focusing on design, movement, and control. Conducted experiments to refine gait and ensure stable operation. I\'m developing a quadruped robot designed to navigate desert terrains. The focus is on creating strong and flexible legs that can handle uneven, sandy surfaces. Watch the video below.')">
-
-          <img src="WhatsApp Image 2025-01-02 at 22.07.45_5ad1eedb.jpg" alt="Robotic Arm">
-          <p>Quadruped</p>
-        </div>
-        <div class="project-box"
-          onclick="showPopup('Developed a path planning system using GPS sensors to collect location data, which was transmitted to a mobile app for processing and navigation commands. Implemented motor control algorithms for navigation and integrated LIDAR and ultrasonic sensors for obstacle detection, including dynamic ones. Designed and integrated hardware and software for seamless operation.')">
-          <img src="Robo_gps.jpg" alt="Drone Swarm">
-          <p>Roboguide</p>
-        </div>
-        <div class="project-box"
-          onclick="showPopup('you can check out all my experiments and projects on my YouTube channel!')">
-          <img src="WhatsApp Image 2025-01-02 at 22.24.16_d20b9149.jpg" alt="Underwater Robot">
-          <p>Exploring Autonomous Robotics: A TurtleBot and OpenManipulator</p>
-        </div>
-        <div class="project-box"
-          onclick="showPopup('Developed an ML model to find the charging socket using image recognition, and then plug the socket based on input coordinates. The project involved the creation of an intelligent system combining machine learning and robotics to autonomously perform a specific task. Ideation included the development of the robot and its movement, using image recognition to locate the charging port, finding the angle for plugging in using vector analysis, and determining the coordinates of the end effector with forward kinematics and ML.')">
-          <img src="https://via.placeholder.com/150" alt="Industrial Automation">
-          <p> LANDROVER,JAGUAR(INTERIIT-TECHMEET)
-            ROBOTICCHARGINGCHALLENGE</p>
-        </div>
-        <div class="project-box"
-          onclick="showPopup('We are developing a prosthetic arm that utilizes EMG sensors and other components to respond to muscle movements. The arm is automated to perform precise tasks, allowing users to control it based on their muscle responses.')">
-          <img src="https://via.placeholder.com/150" alt="Humanoid Robot">
-          <p>Prosthetic Arm</p>
-        </div>
-      </div>
-
-      <div id="popup" class="popup-window">
-        <div id="popup-content"></div>
-        <a class="popup-close-btn" onclick="closePopup()">Close</a>
-      </div>
-
-
-    </section>
-    <section class="section4">
-      <header class="quad">
-        <h1>Quadruped Leg Gait Mechanism</h1>
-      </header>
-
-      <div class="container">
-        <h1>Quadruped Leg Gait Mechanism</h1>
-        <video controls>
-          <source src="Quadruped leg.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
       </div>
     </section>
 
-  </div>
 
-  </div>
+    <!-- CONTACT -->
+    <section id="contact" class="container section contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:thalal.1@iitj.ac.in">thalal.1@iitj.ac.in</a> • Phone: +91 78750 37670</p>
+      <p>GitHub: <a href="https://github.com/Siddhant-666" target="_blank">github.com/Siddhant-666</a></p>
+    </section>
 
+  </main>
 
-  <div class="section6">
-    <object class="pdf" data="Siddhant_resume_Robotics (2).pdf"
-      width=100% height=729.60px>
-  </div>
-  <!-- <a href="C:\Users\HP\Downloads\Siddhant Thalal_B21ME066_IIT JODHPUR resume_internship IMP.pdf" class="resume-link" download>Download My Resume</a>
-  <iframe src="C:\Users\HP\Downloads\Siddhant Thalal_B21ME066_IIT JODHPUR resume_internship IMP.pdf" class="pdf"></iframe> -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Siddhant Thalal — Preparing for MS in Robotics • Research Assistant @ IISc</p>
+    </div>
+  </footer>
 
-  <script src="script5.js"></script>
-
-
+  <!-- scripts -->
+  <script src="script.js"></script>
+  <script src="new.js"></script>
 </body>
 
 </html>
